@@ -10,6 +10,18 @@ var xIncrement=cellRadius*2+cellPadding;
 var yIncrement=cellRadius*2+cellPadding;
 //end of defaults
 
+var xmlhttp = new XMLHttpRequest();
+var url = "data.json";
+
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var jsonData = JSON.parse(this.responseText);
+        load(jsonData);
+    }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
 function plot()
 {
     r = Raphael("chart", width, height);
@@ -71,9 +83,8 @@ function plot()
     }labels.attr({font: "16px Fontin-Sans, Arial", fill: "#fff", "text-anchor": "start"});
 }
 
-function load() {
-    var jsonData = JSON.parse(data);
-    width=parseInt(jsonData.width);
+function load(jsonData1) {
+    var jsonData=jsonData1[0];
     width=parseInt(jsonData.width);
     height=parseInt(jsonData.height);
     cellScale=parseInt(jsonData.cellScale);

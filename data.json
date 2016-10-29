@@ -1,1 +1,39 @@
-data='{"width":"200","height":"230","cellScale":"500","cellsPerRow":"100","cellRadius":"3","data":[{"name":"Mosquito","value":"830000","color":"red","image":""},{"name":"Human","value":"580000","color":"blue","image":""},{"name":"Snake","value":"60000","color":"yellow","image":""},{"name":"Sandfly","value":"24200","color":"green","image":""},{"name":"Dog","value":"17400","color":"orange","image":""}]}';
+[{
+    "width":"640",
+    "height":"480",
+    "cellScale":"500",
+    "cellsPerRow":"100",
+	"cellRadius":"3",
+    "data":[
+        {
+            "name":"Mosquito",
+            "value":"830000",
+            "color":"red",
+            "image":""
+        },
+        {
+            "name":"Human",
+            "value":"580000",
+            "color":"blue",
+            "image":""
+        },
+        {
+            "name":"Snake",
+            "value":"60000",
+            "color":"yellow",
+            "image":""
+        },
+        {
+            "name":"Sandfly",
+            "value":"24200",
+            "color":"green",
+            "image":""
+        },
+        {
+            "name":"Dog",
+            "value":"17400",
+            "color":"orange",
+            "image":""
+        }
+    ]
+}]
