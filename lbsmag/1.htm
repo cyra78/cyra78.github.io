@@ -6,8 +6,14 @@
     <style>
         body {
             margin: 0;
-            font-size: 28px;
+            font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f1f1;
+        }
+        /* Center website */
+        .main {
+        max-width: 1000px;
+        margin: auto;
         }
 
         .header {
@@ -55,6 +61,38 @@
             padding-top: 60px;
         }
 
+        /*data photos grid start*/
+        .row {
+            margin: 10px -16px;
+        }
+
+        /* Add padding BETWEEN each column */
+        .row,
+        .row>.column {
+            padding: 4px;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none;
+            /* Hide all elements by default */
+        }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: block;
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /*data photos grid end*/
         .sidebar {
             height: 100%;
             width: 0;
@@ -105,7 +143,7 @@
 <body>
 
     <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="javascript:closeNav()" class="closebtn">×</a>
         <a href="#s1">Story 1</a>
         <a href="#p1">Poem 1</a>
         <a href="#m1">Malayalam text</a>
@@ -121,9 +159,8 @@
 
         <div id="navbar">
             <a class="active" href="javascript:openNav()">☰ Contents</a>
-            <a href="javascript:void(0)">
-                << Back</a>
-                    <a href="javascript:void(0)">Next >></a>
+            <a href="javascript:goBack()"><< Back</a>
+            <a href="javascript:goNext()">Next >></a>
         </div>
 
         <div class="content">
@@ -222,22 +259,49 @@
             I am the dream and the hope of the slave.<br>
             I rise<br>
             I rise<br>
-            I rise.
+            I rise.<br><br>
+
             <h3 id="m1">ഈ മഴതൻ...വിരലീ പുഴയിൽ..</h3>
+            ഈ മഴതൻ... വിരലീ പുഴയിൽ...<br>
+            എഴുതിയ ലിപിയുടെ പൊരുളറിയേ<br>
+            വിധുരമൊരോർമ്മയിൽ നാമെരിയുന്നൂ <br>
+            വിരഹനിലാവലപോൽ ഇവിടെ...<br>
+            ഈ മഴതൻ വിരലീ പുഴയിൽ <br>
+            എഴുതിയ ലിപിയുടെ പൊരുളറിയേ...<br><br>
+            
+            നനമണ്ണിൽ പ്രിയതേ നിൻ മൃദുലപാദം പതിയുമ്പോൾ<br>
+            ഹൃദയമിന്നീ മണ്‍കരയായീ കാലമെന്റെ ചിരി തൂകീ.<br><br>
+            
+            ഈ മഴതൻ വിരലീ പുഴയിൽ<br>
+            എഴുതിയ ലിപിയുടെ പൊരുളറിയേ<br><br>
+            
+            ഈ ജന്മം മതിയാമോ വിരഹതാപമിതറിയാനായ് <br>
+            കരകവിഞ്ഞു പ്രാണനിലാകേ ഈ വികാരം നദിയായീ.<br>
+            ഇനി വരുമേറെ യുഗങ്ങളിലൂടെ <br>
+            അലയുമൊരേവഴി നാം ഇവിടെ...<br><br>
+            
+            ഈ മഴതൻ വിരലീ പുഴയിൽ <br>
+            എഴുതിയ ലിപിയുടെ പൊരുളറിയേ<br>
+            വിധുരമൊരോർമ്മയിൽ നാമെരിയുന്നൂ <br>
+            വിരഹനിലാവലപോൽ ഇവിടെ...<br>
+            ഈ മഴതൻ വിരലീ പുഴയിൽ <br>
+            എഴുതിയ ലിപിയുടെ പൊരുളറിയേ...<br><br>
 
-            ഈ മഴതൻ...വിരലീ പുഴയിൽ..<br>
-            എഴുതിയ ലിപിയുടെ പൊരുളറിയെ...<br>
-            വിതുരമൊരോർമയിൽ നാമെരിയുന്നു..<br>
-            വിരഹ നിലാവലപോൽ ഇവിടെ..<br>
-            ഈ മഴതൻ...വിരലീ പുഴയിൽ..<br>
-            എഴുതിയ ലിപിയുടെ പൊരുളറിയെ...<br><br>
-
-            നനമണ്ണിൽ പ്രിയതേ നിൻ..<br>
-            മൃദുലപാദം പതിയുമ്പോൾ..<br>
-            നനമണ്ണിൽ പ്രിയതേ നിൻ..<br>
-            മൃദുലപാദം പതിയുമ്പോൾ..<br>
-            ഹൃദയമിന്നീ മൺകരയായീ..<br>
-            കാലമെന്തേ ചിരിതൂകീ...<br>
+            <h2 id="d1">Data</h2>
+            *Just some of the names in planning group in alphabetic order<br>
+            <div class="row">
+                <div class="column"><div><img src="./imgs/m1.png" style="width:100%"><h4>Amith</h4><p>Lorem ipsum dolor..</p></div></div>
+                <div class="column"><div><img src="./imgs/m2.png" style="width:100%"><h4>Arun</h4><p>Lorem ipsum dolor..</p></div></div>
+                <div class="column"><div><img src="./imgs/m3.png" style="width:100%"><h4>Hameed</h4><p>Lorem ipsum dolor..</p></div></div>
+                <div class="column"><div><img src="./imgs/m4.png" style="width:100%"><h4>Jackson</h4><p>Lorem ipsum dolor..</p></div></div>
+                <div class="column"><div><img src="./imgs/m5.png" style="width:100%"><h4>Kishore</h4><p>Lorem ipsum dolor..</p></div></div>
+                <div class="column"><div><img src="./imgs/m6.png" style="width:100%"><h4>Namitha</h4><p>Lorem ipsum dolor..</p></div></div>
+                <div class="column"><div><img src="./imgs/m7.png" style="width:100%"><h4>Preetha</h4><p>Lorem ipsum dolor..</p></div></div>
+                <div class="column"><div><img src="./imgs/m8.png" style="width:100%"><h4>Priya</h4><p>Lorem ipsum dolor..</p></div></div>
+                <div class="column"><div><img src="./imgs/m9.png" style="width:100%"><h4>Rajan</h4><p>Lorem ipsum dolor..</p></div></div>
+                <!-- END Photos grid -->
+                
+            </div>
         </div>
     </div>
 
@@ -263,9 +327,53 @@
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
         }
-    </script>
-    </script>
 
+
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        //dummy function for back and next
+        var contents = ["s1", "p1","m1", "d1"]; 
+        var currentlyActiveContentIndex = 0;
+        function goNext(){
+            currentlyActiveContentIndex++;
+            if(currentlyActiveContentIndex >= contents.length) currentlyActiveContentIndex--;
+            document.getElementById(contents[currentlyActiveContentIndex]).scrollIntoView();
+        }
+        function goBack(){
+            currentlyActiveContentIndex--;
+            if(currentlyActiveContentIndex < 0) currentlyActiveContentIndex = 0;
+            document.getElementById(contents[currentlyActiveContentIndex]).scrollIntoView();
+        }
+    </script>
 </body>
-
 </html>
