@@ -59,7 +59,8 @@ margin: auto;
 .column {
     float: left;
     width: 33.33%;
-    display: none;
+    display: block;
+    /*none was changed to block because once pics in div was loaded dynamically the js filterSelection("all") wasnt getting invoked*/
     /* Hide all elements by default */
 }
 /* The "show" class is added to the filtered elements */
