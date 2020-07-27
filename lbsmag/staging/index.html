@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f1f1;
+        }
+        /* Center website */
+        .main {
+        max-width: 1000px;
+        margin: auto;
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 60px;
+        }
+
+        /*data photos grid start*/
+        .row {
+            margin: 10px -16px;
+        }
+
+        /* Add padding BETWEEN each column */
+        .row,
+        .row>.column {
+            padding: 4px;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none;
+            /* Hide all elements by default */
+        }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: block;
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /*data photos grid end*/
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<script src="./w3.js"></script> 
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:closeNav()" class="closebtn">×</a>
+        <a href="#s1">Story 1</a>
+        <a href="#p1">Poem 1</a>
+        <a href="#m1">Malayalam text</a>
+        <a href="#d1">Data</a>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h2>Cover Image</h2>
+            <p>Title etc<br>
+            <p>The navigation bar will stick to the top when you reach its scroll position.<br>
+        </div>
+
+        <div id="navbar">
+            <a class="active" href="javascript:openNav()">☰ Contents</a>
+            <a href="javascript:goBack()"><< Back</a>
+            <a href="javascript:goNext()">Next >></a>
+        </div>
+
+        <div class="content">
+            <div id="s1" w3-include-html="s1.html" /> 
+            <div id="p1" w3-include-html="p1.html" /> 
+            <div id="m1" w3-include-html="m1.html" /> 
+            <div id="d1" w3-include-html="d1.html" /> 
+        </div>
+    </div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        //dummy function for back and next
+        var contents = ["s1", "p1","m1", "d1"]; 
+        var currentlyActiveContentIndex = 0;
+        function goNext(){
+            currentlyActiveContentIndex++;
+            if(currentlyActiveContentIndex >= contents.length) currentlyActiveContentIndex--;
+            document.getElementById(contents[currentlyActiveContentIndex]).scrollIntoView();
+        }
+        function goBack(){
+            currentlyActiveContentIndex--;
+            if(currentlyActiveContentIndex < 0) currentlyActiveContentIndex = 0;
+            document.getElementById(contents[currentlyActiveContentIndex]).scrollIntoView();
+        }
+    </script>
+</body>
+</html>
