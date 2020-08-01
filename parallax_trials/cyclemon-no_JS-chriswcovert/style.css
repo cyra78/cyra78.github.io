@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+body, html{
+	margin: 0;
+	padding: 0;
+	height:100%;
+	background-size:50%;
+}
+
+body {
+	display:block;
+}
+
+img{
+	border: 0;
+}
+
+#header h1, #pixels{
+	color: #48941A;
+}
+
+.float-left{
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+.float-right{
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.center{
+	font-size: 2.5em;
+	padding: 80px 0 0 0;
+	text-align: center;
+}
+
+
+#intro{
+	background:url(../images/titre.jpg) 0 no-repeat;
+	background-color:#fec56d;
+	background-position:center;
+	background-size:auto;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	color: white;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#bg1{
+	background: url(../images/fond1.webp) 50% 0 no-repeat fixed;
+	background-color:#f4d0ad;
+	background-size:1071px;
+	color: white;
+	height: 120%;
+	padding:0;
+}
+
+#bg1 .fg{
+	background: url(../images/traveler.png) 50% 84.5% no-repeat fixed;
+	height: 120%;
+	padding: 0;
+	position: absolute;
+	width:inherit;
+	z-index: 10;
+}
+
+#bg2{
+	background: url(../images/fond2.webp) 50% 0 no-repeat fixed;
+	background-color:#b1deed;
+	background-size:1071px;
+	color: white;
+	height: 120%;
+	padding:0;
+}
+
+#bg2 .fg{
+	background: url(../images/weirdo.png) 50% 78.5% no-repeat fixed;
+	height: 120%;
+	padding: 0;
+	position: absolute;
+	width:inherit;
+	z-index: 10;
+}
+
+#bg3{
+	background: url(../images/fond3.webp) 50% 0 no-repeat fixed;
+	background-color:#f79cc1;
+	background-size:1071px;
+	color: white;
+	height: 120%;
+	padding:0;
+}
+
+#bg3 .fg{
+	background: url(../images/velo3.png) 50% 83% no-repeat fixed;
+	height: 120%;
+	padding: 0;
+	position: absolute;
+	width:inherit;
+	z-index: 10;
+}
+
+#bg4{
+	background: url(../images/fond4.webp) 50% 0 no-repeat fixed;
+	background-color:#abe7f4;
+	background-size:1071px;
+	color: white;
+	height: 120%;
+	padding:0;
+}
+
+#bg4 .fg{
+	background: url(../images/velo4.png) 50% 85% no-repeat fixed;
+	height: 120%;
+	padding: 0;
+	position: absolute;
+	width:inherit;
+	z-index: 10;
+}
+
+.story{
+	margin: 0 auto;
+	min-width: 980px;
+	overflow: auto;
+	width: 980px;
+}
+
+.story .float-left, .story .float-right{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 350px;
+}
