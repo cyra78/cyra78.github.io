@@ -187,7 +187,7 @@ img{
 }
 
 #intro{
-	background:url(../imagess/titre.jpg) 0 no-repeat;
+	background:url(../images/titre.jpg) 0 no-repeat;
 	background-color:#fec56d;
 	background-position:center;
 	background-size:auto;
@@ -237,7 +237,7 @@ img{
 }
 
 #traveler{
-	background: url(../imagess/fond1.jpg) 50% no-repeat fixed;
+	background: url(../images/fond1.jpg) 50% no-repeat fixed;
 	background-color:#f4d0ad;
 	background-size:1071px;
 	color: white;
@@ -250,7 +250,7 @@ img{
 }
 
 #traveler .bg{
-	background: url(../imagess/traveler.png) 50% 84.5% no-repeat fixed;
+	background: url(../images/traveler.png) 50% 84.5% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -259,7 +259,7 @@ img{
 }
 
 #third{
-	background: url(../imagess/fond2.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond2.jpg) 50% 0 no-repeat fixed;
 	background-color:#b1deed;
 	background-size:1071px;
 	color: white;
@@ -268,7 +268,7 @@ img{
 }
 
 #third .bg{
-	background: url(../imagess/weirdo.png) 50% 78.5% no-repeat fixed;
+	background: url(../images/weirdo.png) 50% 78.5% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -277,7 +277,7 @@ img{
 }
 
 #hipster{
-	background: url(../imagess/fond3.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond3.jpg) 50% 0 no-repeat fixed;
 	background-color:#f79cc1;
 	background-size:1071px;
 	color: white;
@@ -286,7 +286,7 @@ img{
 }
 
 #hipster .bg{
-	background: url(../imagess/velo3.png) 50% 83% no-repeat fixed;
+	background: url(../images/velo3.png) 50% 83% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -295,7 +295,7 @@ img{
 }
 
 #fond4{
-	background: url(../imagess/fond4.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond4.jpg) 50% 0 no-repeat fixed;
 	background-color:#abe7f4;
 	background-size:1071px;
 	color: white;
@@ -304,7 +304,7 @@ img{
 }
 
 #fond4 .bg{
-	background: url(../imagess/velo4.png) 50% 85% no-repeat fixed;
+	background: url(../images/velo4.png) 50% 85% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -313,7 +313,7 @@ img{
 }
 
 #fond5{
-	background: url(../imagess/fond5.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond5.jpg) 50% 0 no-repeat fixed;
 	background-color:#f8d5b8;
 	background-size:1071px;
 	color: white;
@@ -322,7 +322,7 @@ img{
 }
 
 #fond5 .bg{
-	background: url(../imagess/velo5.png) 50% 85% no-repeat fixed;
+	background: url(../images/velo5.png) 50% 85% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -331,7 +331,7 @@ img{
 }
 
 #fond6{
-	background: url(../imagess/fond6.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond6.jpg) 50% 0 no-repeat fixed;
 	background-color:#a0e3ff;
 	background-size:1071px;
 	color: white;
@@ -340,7 +340,7 @@ img{
 }
 
 #fond6 .bg{
-	background: url(../imagess/velo6.png) 50% 82% no-repeat fixed;
+	background: url(../images/velo6.png) 50% 82% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -349,7 +349,7 @@ img{
 }
 
 #fond7{
-	background: url(../imagess/fond7.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond7.jpg) 50% 0 no-repeat fixed;
 	background-color:#f7ca7d;
 	background-size:1071px;
 	color: white;
@@ -358,7 +358,7 @@ img{
 }
 
 #fond7 .bg{
-	background: url(../imagess/velo7.png) 50% 84% no-repeat fixed;
+	background: url(../images/velo7.png) 50% 84% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -367,7 +367,7 @@ img{
 }
 
 #fond8{
-	background: url(../imagess/fond8.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond8.jpg) 50% 0 no-repeat fixed;
 	background-color:#fbdff8;
 	background-size:1071px;
 	color: white;
@@ -376,7 +376,7 @@ img{
 }
 
 #fond8 .bg{
-	background: url(../imagess/velo8.png) 50% 86% no-repeat fixed;
+	background: url(../images/velo8.png) 50% 86% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -385,7 +385,7 @@ img{
 }
 
 #fond9{
-	background: url(../imagess/fond9.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond9.jpg) 50% 0 no-repeat fixed;
 	background-color:#c6deff;
 	background-size:1071px;
 	color: white;
@@ -394,7 +394,7 @@ img{
 }
 
 #fond9 .bg{
-	background: url(../imagess/velo9.png) 50% 82% no-repeat fixed;
+	background: url(../images/velo9.png) 50% 82% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -403,7 +403,7 @@ img{
 }
 
 #fond10{
-	background: url(../imagess/fond10.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond10.jpg) 50% 0 no-repeat fixed;
 	background-color:#91f9d3;
 	background-size:1071px;
 	color: white;
@@ -412,7 +412,7 @@ img{
 }
 
 #fond10 .bg{
-	background: url(../imagess/velo10.png) 50% 83% no-repeat fixed;
+	background: url(../images/velo10.png) 50% 83% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -421,7 +421,7 @@ img{
 }
 
 #fond11{
-	background: url(../imagess/fond11.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond11.jpg) 50% 0 no-repeat fixed;
 	background-color:#f8c075;
 	background-size:1071px;
 	color: white;
@@ -430,7 +430,7 @@ img{
 }
 
 #fond11 .bg{
-	background: url(../imagess/velo11.png) 50% 80% no-repeat fixed;
+	background: url(../images/velo11.png) 50% 80% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -439,7 +439,7 @@ img{
 }
 
 #fond12{
-	background: url(../imagess/fond122.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond122.jpg) 50% 0 no-repeat fixed;
 	background-color:#ffd4ab;
 	background-size:1071px;
 	color: white;
@@ -448,7 +448,7 @@ img{
 }
 
 #fond12 .bg{
-	background: url(../imagess/velo12.png) 50% 80.5% no-repeat fixed;
+	background: url(../images/velo12.png) 50% 80.5% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -457,7 +457,7 @@ img{
 }
 
 #fond13{
-	background: url(../imagess/fond13.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond13.jpg) 50% 0 no-repeat fixed;
 	background-color:#b2fad7;
 	background-size:1071px;
 	color: white;
@@ -466,7 +466,7 @@ img{
 }
 
 #fond13 .bg{
-	background: url(../imagess/velo13.png) 50% 82% no-repeat fixed;
+	background: url(../images/velo13.png) 50% 82% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -475,7 +475,7 @@ img{
 }
 
 #fond14{
-	background: url(../imagess/fond14.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond14.jpg) 50% 0 no-repeat fixed;
 	background-color:#dbdbdb;
 	background-size:1071px;
 	color: white;
@@ -484,7 +484,7 @@ img{
 }
 
 #fond14 .bg{
-	background: url(../imagess/velo14.png) 50% 83.5% no-repeat fixed;
+	background: url(../images/velo14.png) 50% 83.5% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -493,7 +493,7 @@ img{
 }
 
 #fond15{
-	background: url(../imagess/fond15.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond15.jpg) 50% 0 no-repeat fixed;
 	background-color:#fddcae;
 	background-size:1071px;
 	color: white;
@@ -502,7 +502,7 @@ img{
 }
 
 #fond15 .bg{
-	background: url(../imagess/velo15.png) 50% 83% no-repeat fixed;
+	background: url(../images/velo15.png) 50% 83% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -511,7 +511,7 @@ img{
 }
 
 #fond16{
-	background: url(../imagess/fond16.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond16.jpg) 50% 0 no-repeat fixed;
 	background-color:#fb9d79;
 	background-size:1071px;
 	color: white;
@@ -520,7 +520,7 @@ img{
 }
 
 #fond16 .bg{
-	background: url(../imagess/velo16.png) 50% 82.5% no-repeat fixed;
+	background: url(../images/velo16.png) 50% 82.5% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -529,7 +529,7 @@ img{
 }
 
 #fond17{
-	background: url(../imagess/fond17.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/fond17.jpg) 50% 0 no-repeat fixed;
 	background-color:#f6978f;
 	background-size:1071px;
 	color: white;
@@ -538,7 +538,7 @@ img{
 }
 
 #fond17 .bg{
-	background: url(../imagess/velo17.png) 50% 79.5% no-repeat fixed;
+	background: url(../images/velo17.png) 50% 79.5% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
@@ -547,7 +547,7 @@ img{
 }
 
 #fond19{
-	background: url(../imagess/fond18.jpg) 50% no-repeat fixed;
+	background: url(../images/fond18.jpg) 50% no-repeat fixed;
 	background-color:#000;
 	background-size:1071px;
 	color: white;
@@ -561,7 +561,7 @@ img{
 }
 
 #fond19 .bg{
-	background: url(../imagess/velo18.png) 50% 113% no-repeat fixed;
+	background: url(../images/velo18.png) 50% 113% no-repeat fixed;
 	height: 120%;
 	padding: 0;
 	position: absolute;
