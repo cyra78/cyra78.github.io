@@ -57,20 +57,20 @@ p{
 	text-shadow:0 2px 2px #000
 }
 #title{
-	background-image:url(kLEnZ9o.jpg);
+	background-image:url(../images/kLEnZ9o.jpg);
 	background-attachment:fixed
 }
 #section1{
-	background-image:url(k1hqL67.jpg);
+	background-image:url(../images/k1hqL67.jpg);
 	transform:translateZ(-1px) scale(2);
 	z-index:-1
 }
 #section2{
-	background-image:url(SYAARx7.jpg);
+	background-image:url(../images/SYAARx7.jpg);
 	background-attachment:fixed
 }
 #section3{
-	background-image:url(jo4HX13.jpg);
+	background-image:url(../images/jo4HX13.jpg);
 	transform:translateZ(-1px) scale(2);
 	z-index:-1
 }
