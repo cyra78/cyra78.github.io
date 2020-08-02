@@ -1,7 +1,7 @@
-window.onscroll = function () { myFunction() };
+window.onscroll = function () { stickyScroll() };
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
-function myFunction() {
+function stickyScroll() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
     } else {
@@ -9,11 +9,11 @@ function myFunction() {
     }
 }
 function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("sidebar").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
 }
 function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("sidebar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
 filterSelection("all")
@@ -45,16 +45,25 @@ function w3RemoveClass(element, name) {
     }
     element.className = arr1.join(" ");
 }
-//dummy function for back and next
-var contents = ["s1", "p1","m1", "d1"]; 
+//buggy functions for back and next
+var contents = ["s1", "p1", "m1", "d1"]; 
 var currentlyActiveContentIndex = 0;
+var scrollBackOffset = -50; //just a hack number, without this we dont see the heading it goes below the sticky navbar
 function goNext(){
     currentlyActiveContentIndex++;
-    if(currentlyActiveContentIndex >= contents.length) currentlyActiveContentIndex--;
-    document.getElementById(contents[currentlyActiveContentIndex]).scrollIntoView();
+    if(currentlyActiveContentIndex >= contents.length){
+        currentlyActiveContentIndex--;
+    }else{
+        document.getElementById(contents[currentlyActiveContentIndex]).scrollIntoView();
+        window.scrollBy(0,scrollBackOffset);
+    }
 }
 function goBack(){
     currentlyActiveContentIndex--;
-    if(currentlyActiveContentIndex < 0) currentlyActiveContentIndex = 0;
-    document.getElementById(contents[currentlyActiveContentIndex]).scrollIntoView();
+    if(currentlyActiveContentIndex < 0){
+        currentlyActiveContentIndex = 0;
+    }else{
+        document.getElementById(contents[currentlyActiveContentIndex]).scrollIntoView();
+        window.scrollBy(0,scrollBackOffset);
+    }
 }

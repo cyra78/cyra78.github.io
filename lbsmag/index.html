@@ -8,14 +8,6 @@
 <script src="./w3.js"></script> 
 <body>
 
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:closeNav()" class="closebtn">×</a>
-        <a href="#s1">Story 1</a>
-        <a href="#p1">Poem 1</a>
-        <a href="#m1">Malayalam text</a>
-        <a href="#d1">Data</a>
-    </div>
-
     <div id="main">
         <div class="header">
             <h2>Cover Image</h2>
@@ -24,9 +16,17 @@
         </div>
 
         <div id="navbar">
-            <a class="active" href="javascript:openNav()">☰ Contents</a>
-            <a href="javascript:goBack()">&lt;&lt; Back</a>
-            <a href="javascript:goNext()">Next &gt;&gt;</a>
+            <a class="active" href="javascript:openNav()">≡ Contents</a>
+            <a href="javascript:goBack()">Back ▲</a>
+            <a href="javascript:goNext()">Next ▼</a>
+        </div>
+
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:closeNav()" class="closebtn">×</a>
+            <a href="#s1">Story 1</a>
+            <a href="#p1">Poem 1</a>
+            <a href="#m1">Malayalam text</a>
+            <a href="#d1">Data</a>
         </div>
 
         <div class="content">
