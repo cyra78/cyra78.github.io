@@ -8,6 +8,11 @@ Also cafe image didnt load in mobile view
 4. font getting applied to body..need to keep it per article/file
 5. In cafe.html eat/drink tabs didnt work
 6. sidebar contents grows its always scrolled to bottom
+Also sidebar can be 40% of screen for cell but for desktop can just be 20 or 30%
+7. next prev needs to be worked on
+
+===clean up the examples
+1. add a responsive layout for say poems
 
 NOTES
 1.#refs fro a href for navigation are now from inside the page.

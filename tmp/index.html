@@ -35,8 +35,10 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="openNav()">
             <i class="fa fa-bars"></i>
         </a>
-        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Next</a>
-        <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Prev</a>
+        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+            Next</a>
+        <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+            Prev</a>
     </div>
 
     <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
@@ -46,16 +48,17 @@
             <i class="fa fa-remove"></i>
         </a>
 
-        <a class="w3-bar-item w3-button w3-block" href="#">TOP</a>
+        <a class="w3-bar-item w3-button w3-block" href="#">Cover Page</a>
 
         <h4 class="w3-bar-item w3-text-grey">STARTUP</h4>
         <a class="w3-bar-item w3-button w3-padding-large" href="#about">ABOUT</a>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#team"><i class="fa fa-user"></i> Team</a>
+        <a class="w3-bar-item w3-button w3-padding-large" href="#team"><i class="fa fa-user"></i>Flight of the Dandellions</a>
         <a class="w3-bar-item w3-button w3-padding-large" href="#work"><i class="fa fa-th"></i> Work</a>
         <a class="w3-bar-item w3-button w3-padding-large" href="#pricing"><i class="fa fa-usd"></i> Pricing</a>
         <a class="w3-bar-item w3-button w3-padding-large" href="#contact"><i class="fa fa-envelope"></i> Contact</a>
 
         <h4 class="w3-bar-item w3-text-grey">BLOG</h4>
+        <a class="w3-bar-item w3-button w3-padding-large" href="#sec1">In Blog...</a>
 
         <h4 class="w3-bar-item w3-text-grey">BAND</h4>
         <a class="w3-bar-item w3-button w3-padding-large" href="#band">Band</a>
@@ -80,7 +83,7 @@
 
     <div class="content" onclick="closeNav()">
         <div w3-include-html="startup.html"></div>
-        <div w3-include-html="blog.html"></div>
+        <div id="sec1" w3-include-html="blog.html"></div>
         <div w3-include-html="band.html"></div>
         <div w3-include-html="black_n_white_portfolio.html"></div>
         <div w3-include-html="cafe.html"></div>
