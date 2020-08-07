@@ -7,7 +7,9 @@ same with startup logo image.. i think issue is with header tag... not sure
 Also cafe image didnt load in mobile view
 4. font getting applied to body..need to keep it per article/file
 5. In cafe.html eat/drink tabs didnt work
-
+6. w3.css was modified to remove hardcoded fonts form it.
+Can it be fixed by adding a style css into index.html. Check and try
+But then we need to add that style to all the article pages too! 
 Must fix issues 
 6. sidebar contents grows its always scrolled to bottom
 Also sidebar can be 40% of screen for cell but for desktop can just be 20 or 30%
@@ -21,10 +23,12 @@ Also an article can have multiple #hrefs for content lookup as well
 2. 2 types of sidebar closingnav and notclosingnavs js functions in index.html
 
 IMPORTANT NOTES FOR EDITORS
-no article pages can have titles except for index.html
-no article pages can have styles on body.
-As much as possible no scripts needed in articles htmls. They work but lets keep only for rarest of rarest
+1. no article pages can have titles except for index.html
+2. no article pages can have styles on body.
+3. As much as possible no scripts needed in articles htmls. They work but lets keep only for rarest of rarest
 No styles that are not from w3 css as much as possible
-
-Have samples
+4. Use multi column views only when the columns fit into height of turned landscape cell.
+Dont depend on how it looks on the PC.
+Add a <hr> or image below the columns if there are more columns below  
+5. Have samples
 	tmp/2 is good. Have reference to important samples from w3
