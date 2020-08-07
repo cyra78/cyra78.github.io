@@ -1,4 +1,4 @@
-TBDs
+TBDs/ISSUES
 1. bands template automatic slideshow javascript didnt work. so removed it from band.html. Will check later
 2. tbd close menu if clicking on base page
 3. profile_girl image that  remains on top... nice feature, need to restrict this to just that page/content container and not whole window
@@ -7,14 +7,24 @@ same with startup logo image.. i think issue is with header tag... not sure
 Also cafe image didnt load in mobile view
 4. font getting applied to body..need to keep it per article/file
 5. In cafe.html eat/drink tabs didnt work
+
+Must fix issues 
 6. sidebar contents grows its always scrolled to bottom
 Also sidebar can be 40% of screen for cell but for desktop can just be 20 or 30%
 7. next prev needs to be worked on
-
-===clean up the examples
-1. add a responsive layout for say poems
+8. side bar contents need to reduce spacing for it to be more compacted"
 
 NOTES
-1.#refs fro a href for navigation are now from inside the page.
-If per page is one article then the #s can be from index.html divs itself
-2. 2 types of menus closing nav and notclosingnavs js functions in index.html
+1.#refs for <a href for side bar navigation can be from inside the article pages too.
+For simplicity they are set for the w3-include-html tag in index.html
+Also an article can have multiple #hrefs for content lookup as well
+2. 2 types of sidebar closingnav and notclosingnavs js functions in index.html
+
+IMPORTANT NOTES FOR EDITORS
+no article pages can have titles except for index.html
+no article pages can have styles on body.
+As much as possible no scripts needed in articles htmls. They work but lets keep only for rarest of rarest
+No styles that are not from w3 css as much as possible
+
+Have samples
+	tmp/2 is good. Have reference to important samples from w3
