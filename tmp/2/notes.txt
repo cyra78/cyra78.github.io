@@ -1,0 +1,18 @@
+TBDs
+1. bands template automatic slideshow javascript didnt work. so removed it from band.html. Will check later
+3. profile_girl image that  remains on top... nice feature, need to restrict this to just that page/content container and not whole window
+same for cafe image
+same with startup logo image.. i think issue is with header tag... not sure
+Also cafe image didnt load in mobile view
+5. In cafe.html eat/drink tabs didnt work
+6. sidebar contents grows its always scrolled to bottom
+Also sidebar can be 40% of screen for cell but for desktop can just be 20 or 30%
+7. next prev needs to be worked on
+
+===clean up the examples
+1. add a responsive layout for say poems
+
+NOTES
+1.#refs fro a href for navigation are now from inside the page.
+If per page is one article then the #s can be from index.html divs itself
+2. 2 types of menus closing nav and notclosingnavs js functions in index.html
