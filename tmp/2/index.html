@@ -42,7 +42,7 @@
     </div>
 
     <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-top" style="display:none;z-index:2"
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-top" style="display:block;z-index:2"
         id="sidebar">
         <a class="w3-bar-item w3-button w3-xlarge" onclick="closeNav()" href="javascript:void(0)">
             <i class="fa fa-remove"></i>
@@ -50,43 +50,31 @@
 
         <a class="w3-bar-item w3-button w3-block" href="#">Cover Page</a>
 
-        <h4 class="w3-bar-item w3-text-grey">STARTUP</h4>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#about">ABOUT</a>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#team"><i class="fa fa-user"></i>Flight of the Dandellions</a>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#work"><i class="fa fa-th"></i> Work</a>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#pricing"><i class="fa fa-usd"></i> Pricing</a>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+        <h4 class="w3-bar-item w3-text-grey">FICTION</h4>
+        <a class="w3-bar-item w3-button w3-padding-large" href="#s1">Fox-In-The-Morning</a>
+        <a class="w3-bar-item w3-button w3-padding-large" href="#s2">Vanka</a>
 
-        <h4 class="w3-bar-item w3-text-grey">BLOG</h4>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#sec1">In Blog...</a>
 
-        <h4 class="w3-bar-item w3-text-grey">BAND</h4>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#band">Band</a>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#tour">Tour</a>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#contact">Contact</a>
+        <h4 class="w3-bar-item w3-text-grey">POETRY</h4>
+        <a class="w3-bar-item w3-button w3-padding-large" href="#p1">Still I Rise</a>
 
-        <h4 class="w3-bar-item w3-text-grey">PORTFOLIO</h4>
-        <a class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-large" onclick="closeNav()"
-            href="#portfolio">Portfolio</a>
-        <a class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-large" onclick="closeNav()"
-            href="#about">About</a>
-        <a class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-large" onclick="closeNav()"
-            href="#contact">Contact</a>
+        <h4 class="w3-bar-item w3-text-grey">കവിതകൾ</h4>
+        <a class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-large" onclick="closeNav()" href="#mp1">ഈ മഴതൻ...വിരലീ പുഴയിൽ</a>
+        <a class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-large" onclick="closeNav()" href="#mp2">ആകാശ ഗോപുരം</a>
 
-        <h4 class="w3-bar-item w3-text-grey">CAFE</h4>
-        <a class="w3-bar-item w3-button w3-block w3-padding-large" href="#about">About</a>
-        <a class="w3-bar-item w3-button w3-block w3-padding-large" href="#menu">Menu</a>
-        <a class="w3-bar-item w3-button w3-block w3-padding-large" href="#where">Where</a>
+        <h4 class="w3-bar-item w3-text-grey">GALLERY</h4>
+        <a class="w3-bar-item w3-button w3-block w3-padding-large" href="#d1">Data 2.0</a>
     </nav>
 
 <!-- Page Content -->
 
     <div class="content" onclick="closeNav()">
-        <div w3-include-html="startup.html"></div>
-        <div id="sec1" w3-include-html="blog.html"></div>
-        <div w3-include-html="band.html"></div>
-        <div w3-include-html="black_n_white_portfolio.html"></div>
-        <div w3-include-html="cafe.html"></div>
+        <div id="s1" w3-include-html="s1.html"></div>
+        <div id="s2" w3-include-html="s2.html"></div>
+        <div id="p1" w3-include-html="p1.html"></div>
+        <div id="mp1" w3-include-html="m1.html"></div>
+        <div id="mp2" w3-include-html="m2.html"></div>
+        <div id="d1" w3-include-html="d1.html"></div>
     </div>
 
     <script src="./w3.js"></script>
