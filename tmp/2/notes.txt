@@ -16,3 +16,5 @@ NOTES
 1.#refs fro a href for navigation are now from inside the page.
 If per page is one article then the #s can be from index.html divs itself
 2. 2 types of menus closing nav and notclosingnavs js functions in index.html
+
+no pages can have titles except for index.html

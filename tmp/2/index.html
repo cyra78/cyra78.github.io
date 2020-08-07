@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <title>eL Bee S</title>
 <link rel="stylesheet" href="./w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
@@ -19,11 +20,12 @@
 </head>
 
 <!-- <body style="font-family: 'Poppins', sans-serif"> -->
+
 <body>
     <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
         <img class="w3-image" src="./w3images/photographer.jpg" alt="Me" width="1500" height="600">
         <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Title etc</h1>
+            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">eL Bee S</h1>
             <h3 class="w3-hide-large">The navigation bar will stick to the top when you reach its scroll position.</h3>
             <h3 class="w3-hide-medium w3-hide-small">The navigation bar will stick to the top when you reach its scroll
                 position.</h3>
@@ -31,7 +33,7 @@
     </header>
 
     <!-- Links (sit on top) -->
-    <div class="w3-bar w3-white w3-card w3-xlarge" id="navbar">
+    <div class="w3-bar w3-white w3-card w3-xlarge" style="z-index:2" id="navbar">
         <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="openNav()">
             <i class="fa fa-bars"></i>
         </a>
@@ -43,30 +45,32 @@
 
     <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-top" style="display:none;z-index:2"
-    id="sidebar">
-    <a class="w3-bar-item w3-button w3-xlarge" onclick="closeNav()" href="javascript:void(0)">
-        <i class="fa fa-remove"></i>
-    </a>
+        id="sidebar">
+        <a class="w3-bar-item w3-button w3-xlarge" onclick="closeNav()" href="javascript:void(0)">
+            <i class="fa fa-remove"></i>
+        </a>
 
-    <a class="w3-bar-item w3-button w3-block" href="#">Cover Page</a>
+        <a class="w3-bar-item w3-button w3-block" href="#">Cover Page</a>
 
-    <h4 class="w3-bar-item w3-text-grey">FICTION</h4>
-    <a class="w3-bar-item w3-button w3-padding-large" href="#s1">Fox-In-The-Morning</a>
-    <a class="w3-bar-item w3-button w3-padding-large" href="#s2">Vanka</a>
+        <h4 class="w3-bar-item w3-text-grey">FICTION</h4>
+        <a class="w3-bar-item w3-button w3-padding-large" href="#s1">Fox-In-The-Morning</a>
+        <a class="w3-bar-item w3-button w3-padding-large" href="#s2">Vanka</a>
 
 
-    <h4 class="w3-bar-item w3-text-grey">POETRY</h4>
-    <a class="w3-bar-item w3-button w3-padding-large" href="#p1">Still I Rise</a>
+        <h4 class="w3-bar-item w3-text-grey">POETRY</h4>
+        <a class="w3-bar-item w3-button w3-padding-large" href="#p1">Still I Rise</a>
 
-    <h4 class="w3-bar-item w3-text-grey">കവിതകൾ</h4>
-    <a class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-large" onclick="closeNav()" href="#mp1">ഈ മഴതൻ...വിരലീ പുഴയിൽ</a>
-    <a class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-large" onclick="closeNav()" href="#mp2">ആകാശ ഗോപുരം</a>
+        <h4 class="w3-bar-item w3-text-grey">കവിതകൾ</h4>
+        <a class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-large" onclick="closeNav()" href="#mp1">ഈ
+            മഴതൻ...വിരലീ പുഴയിൽ</a>
+        <a class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-large" onclick="closeNav()"
+            href="#mp2">ആകാശ ഗോപുരം</a>
 
-    <h4 class="w3-bar-item w3-text-grey">GALLERY</h4>
-    <a class="w3-bar-item w3-button w3-block w3-padding-large" href="#d1">Data 2.0</a>
-</nav>
+        <h4 class="w3-bar-item w3-text-grey">GALLERY</h4>
+        <a class="w3-bar-item w3-button w3-block w3-padding-large" href="#d1">Data 2.0</a>
+    </nav>
 
-<!-- Page Content -->
+    <!-- Page Content -->
 
     <div class="content" onclick="closeNav()">
         <div id="s1" w3-include-html="s1.html"></div>
@@ -76,6 +80,11 @@
         <div id="mp2" w3-include-html="mp2.html"></div>
         <div id="d1" w3-include-html="d1.html"></div>
     </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey w3-margin-top">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
 
     <script src="./w3.js"></script>
     <script>
@@ -106,9 +115,10 @@
         function closeNav() {
             if (mySidebar.style.display === 'block') {
                 mySidebar.style.display = 'none';
-            } 
+            }
         }
     </script>
 </body>
+
 
 </html>
