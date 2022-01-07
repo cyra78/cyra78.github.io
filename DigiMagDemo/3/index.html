@@ -21,14 +21,12 @@
 
 <!-- <body style="font-family: 'Poppins', sans-serif"> -->
 
-<body>
+<body style="font-family: 'Poppins', sans-serif">
     <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
         <img class="w3-image" src="./w3images/photographer.jpg" alt="Me" width="1500" height="600">
-        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">eL Bee S</h1>
-            <h3 class="w3-hide-large">The navigation bar will stick to the top when you reach its scroll position.</h3>
-            <h3 class="w3-hide-medium w3-hide-small">The navigation bar will stick to the top when you reach its scroll
-                position.</h3>
+        <div class="w3-display-middle  w3-wide w3-text-light-grey">
+            <h1 class="w3-xxlarge">eL Bee S</h1>
+            <h3 class="w3-hide-medium">Its been 27 years since we met...</h3>
         </div>
     </header>
 
@@ -37,48 +35,33 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="openNav()">
             <i class="fa fa-bars"></i>
         </a>
-        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-            Next</a>
-        <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
-            Prev</a>
     </div>
 
     <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-top" style="display:none;z-index:2"
         id="sidebar">
-        <a class="w3-bar-item w3-button w3-xlarge" onclick="closeNav()" href="javascript:void(0)">
+        <a class="w3-bar-item w3-button w3-text-grey w3-xlarge" onclick="closeNav()" href="javascript:void(0)">
             <i class="fa fa-remove"></i>
         </a>
 
-        <a class="w3-bar-item w3-button w3-block" href="#">Cover Page</a>
+        <a class="w3-bar-item w3-button w3-xlarge w3-text-grey w3-hover-black" href="#">eL Bee S: Cover</a>
 
-        <h4 class="w3-bar-item w3-text-grey">FICTION</h4>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#s1">The Unforced Error</a>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#s2">A journey back to where it all started...</a>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#s3">Towards Rational Thinking!</a>
-
-
-        <h4 class="w3-bar-item w3-text-grey">POETRY</h4>
-        <a class="w3-bar-item w3-button w3-padding-large" href="#p1">Still I Rise</a>
-
-        <h4 class="w3-bar-item w3-text-grey">കവിതകൾ</h4>
-        <a class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-large" onclick="closeNav()" href="#mp1">ഈ
-            മഴതൻ...വിരലീ പുഴയിൽ</a>
-        <a class="w3-bar-item w3-button w3-text-grey w3-hover-black w3-padding-large" onclick="closeNav()"
-            href="#mp2">ആകാശ ഗോപുരം</a>
-
-        <h4 class="w3-bar-item w3-text-grey">GALLERY</h4>
-        <a class="w3-bar-item w3-button w3-block w3-padding-large" href="#d1">Data 2.0</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="closeNav()" href="#s1">Unforced Error</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="closeNav()" href="#mp1">ഡാ മെലിയാ</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="closeNav()" href="#s2">A journey back to where it all started...</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="closeNav()" href="#s3">Towards Rational Thinking!</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="closeNav()" href="#p1">Still I Rise</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="closeNav()" href="#mp2">ആകാശ ഗോപുരം</a>
+        <a class="w3-bar-item w3-button w3-block w3-padding-large" onclick="closeNav()" href="#d1">Data 2.0</a>
     </nav>
 
     <!-- Page Content -->
 
     <div class="content" onclick="closeNav()">
         <div id="s1" w3-include-html="s1.html"></div>
-        <div id="s2" w3-include-html="s2.html"></div>
-        <div id="s3" w3-include-html="s3.html"></div>
-        <div id="p1" w3-include-html="p1.html"></div>
         <div id="mp1" w3-include-html="mp1.html"></div>
+        <div id="s2" w3-include-html="s2.html"></div>
+        <div id="p1" w3-include-html="p1.html"></div>
         <div id="mp2" w3-include-html="mp2.html"></div>
         <div id="d1" w3-include-html="d1.html"></div>
     </div>
